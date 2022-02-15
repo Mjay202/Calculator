@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="mycssfile2.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+    <h1>My Calculator</h1>
+
+   
+
+        Value 1: <input type="number" id="value1" value="0"><br>
+        Value 2: <input type="number" id="value2" value="0"><br><br><br>
+        ANSWER:  <input type="number" id="answer" placeholder="Result"><br>
+
+        <p id="demo"></p>
+
+        <button class="button button2" onclick="multiplication()">*</button>
+        <button class="button button2" onclick="division()">/</button>
+        <button class="button button2" onclick="addition()">+</button>
+        <button class="button button2" onclick="subtraction()">-</button>
+        <button class="button button2" onclick="modulus()">%</button>
+        <button class="button button2" onclick="exponential()">^</button>
+    </div>
+    </div>
+    
+    <script>
+        
+
+        function multiplication() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = firstValue * secondValue;
+            document.getElementById("answer").value = result;
+    }
+        function division() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = firstValue / secondValue;
+            document.getElementById("answer").value = result;
+    }
+        function addition() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = parseInt(firstValue)  + parseInt(secondValue) ;
+            document.getElementById("answer").value = result;
+    }
+        function subtraction() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = firstValue - secondValue;
+            document.getElementById("answer").value = result;
+    }
+        function exponential() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = firstValue ** secondValue;
+            document.getElementById("answer").value = result;
+    }
+        function modulus() {
+            var firstValue = document.getElementById("value1").value;
+        var secondValue = document.getElementById("value2").value;
+            var result = firstValue % secondValue;
+            document.getElementById("answer").value = result;
+    }
+    </script>
+</body>
+</html>

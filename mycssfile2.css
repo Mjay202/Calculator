@@ -1,0 +1,78 @@
+.background {
+   
+    background-image: url(jess-bailey-6F0mLsrv134-unsplash.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.container {
+    padding-top: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #669DB3FF;
+    border-radius: 20px ;
+    border-color: #669DB3FF;
+    height: 450px;
+    width: 550px;
+
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
+    font-size: 20;
+}
+
+input[type=number] {
+    width: 30%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: rgb(4, 20, 26);
+  }
+
+  input[type=number]:focus {
+    background-color: lightblue;
+  }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+   
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border-radius: 12px;
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
